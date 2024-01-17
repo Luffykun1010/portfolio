@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammed Suhail</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="icon" href="icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"> </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("-vNcTYN9f1Z_roiiz");
+        })();
+    </script>
+</head>
+
+<body class="body">
+    <div class="home" id="home">
+        <div class="home-text">
+            Hello, I'm <span>Muhammed Suhail.</span> <br>
+            I'm a full-stack python developer.
+        </div>
+        <button onclick="location.href='#about'">More About Me</button>
+    </div>
+    <div class="nav-bar sticky-top">
+        <div class="row" style="background: #0b0909;">
+            <div class="col-1"></div>
+            <div class="col-8 col-md-9">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" style="border: none;"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation" onclick="changesvg()">
+                            <svg id="svgfn" class="hidden" width="25" height="25" viewBox="0 0 1024 1024"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#287183"
+                                    d="M764.288 214.592L512 466.88L259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512L214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l252.288 252.288a31.936 31.936 0 0 0 45.12-45.12L557.12 512.064l252.288-252.352a31.936 31.936 0 1 0-45.12-45.184z" />
+                            </svg>
+                            <svg id="svgsn" class="active" width="25" height="25" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g fill="none" stroke="#287183" stroke-width="1.5">
+                                    <path
+                                        d="M7 12H6c-1.886 0-2.828 0-3.414.586C2 13.172 2 14.114 2 16v2c0 1.886 0 2.828.586 3.414C3.172 22 4.114 22 6 22h2c1.886 0 2.828 0 3.414-.586C12 20.828 12 19.886 12 18v-1"
+                                        opacity=".5" />
+                                    <path
+                                        d="M12 7h-1c-1.886 0-2.828 0-3.414.586C7 8.172 7 9.114 7 11v2c0 1.886 0 2.828.586 3.414C8.172 17 9.114 17 11 17h2c1.886 0 2.828 0 3.414-.586C17 15.828 17 14.886 17 13v-1" />
+                                    <path
+                                        d="M12 6c0-1.886 0-2.828.586-3.414C13.172 2 14.114 2 16 2h2c1.886 0 2.828 0 3.414.586C22 3.172 22 4.114 22 6v2c0 1.886 0 2.828-.586 3.414C20.828 12 19.886 12 18 12h-2c-1.886 0-2.828 0-3.414-.586C12 10.828 12 9.886 12 8z" />
+                                </g>
+                            </svg>
+                        </button>
+                        <script>
+                            count = 0
+                            function changesvg() {
+                                count++;
+                                const svgfn = document.getElementById('svgfn');
+                                const svgsn = document.getElementById('svgsn');
+                                if (count % 2 == 0) {
+                                    svgsn.style.display = "block";
+                                    svgfn.style.display = "none";
+                                } else {
+                                    svgsn.style.display = "none";
+                                    svgfn.style.display = "block";
+                                }
+                            }
+                        </script>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2" style="width: 40vw;">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#projects">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-1">
+                <a href="https://github.com/Luffykun1010">
+                    <svg width="28" class="git-svg" height="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.24 22a1 1 0 0 1-1-1v-2.6a2.15 2.15 0 0 0-.54-1.66a1 1 0 0 1 .61-1.67C17.75 14.78 20 14 20 9.77a4 4 0 0 0-.67-2.22a2.75 2.75 0 0 1-.41-2.06a3.71 3.71 0 0 0 0-1.41a7.65 7.65 0 0 0-2.09 1.09a1 1 0 0 1-.84.15a10.15 10.15 0 0 0-5.52 0a1 1 0 0 1-.84-.15a7.4 7.4 0 0 0-2.11-1.09a3.52 3.52 0 0 0 0 1.41a2.84 2.84 0 0 1-.43 2.08a4.07 4.07 0 0 0-.67 2.23c0 3.89 1.88 4.93 4.7 5.29a1 1 0 0 1 .82.66a1 1 0 0 1-.21 1a2.06 2.06 0 0 0-.55 1.56V21a1 1 0 0 1-2 0v-.57a6 6 0 0 1-5.27-2.09a3.9 3.9 0 0 0-1.16-.88a1 1 0 1 1 .5-1.94a4.93 4.93 0 0 1 2 1.36c1 1 2 1.88 3.9 1.52a3.89 3.89 0 0 1 .23-1.58c-2.06-.52-5-2-5-7a6 6 0 0 1 1-3.33a.85.85 0 0 0 .13-.62a5.69 5.69 0 0 1 .33-3.21a1 1 0 0 1 .63-.57c.34-.1 1.56-.3 3.87 1.2a12.16 12.16 0 0 1 5.69 0c2.31-1.5 3.53-1.31 3.86-1.2a1 1 0 0 1 .63.57a5.71 5.71 0 0 1 .33 3.22a.75.75 0 0 0 .11.57a6 6 0 0 1 1 3.34c0 5.07-2.92 6.54-5 7a4.28 4.28 0 0 1 .22 1.67V21a1 1 0 0 1-.94 1" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="row">
+            <div class="col-md-2 col-1"></div>
+            <div class="col-11 col-md-8 ">
+                <p class="head-name">ABOUT</p>
+                <div class="about-details">
+                    <p>Hello there! My name is <b>Muhammed Suhail</b> . Enthusiastic <b>Full-Stack Python Developer</b>
+                        with a strong foundation in Django, honed through a 6-month bootcamp at Avodha Edutech. Skilled
+                        in web development with Django frameworks and REST APIs. Successfully built and deployed
+                        E-Commerce Site using Python and Django. Actively seeking a challenging role to contribute my
+                        skills and passion for building robust web applications.</p>
+                    <p>Technically adept with a thirst for learning, I'm proficient in both front-end technologies like
+                        <b>HTML , CSS , JavaScript</b> and back-end powerhouses like <b>Python , Django ,
+                            JavaScript</b> . My expertise extends to <b>MySQL , SQlite , Bootstrap , Git</b>.
+                    </p>
+                    <p>But technical skills are just the foundation. What truly drives me is solving real-world problems
+                        , continuous learning and growth , continuous learning and growth and innovation and creativity.
+                        I thrive in collaborative environments where I can contribute fresh ideas and learn from
+                        experienced mentors.</p>
+                    <p>My portfolio showcasing some of my best projects (<a href="#projects">adding below</a>), from
+                        building a
+                        small home page of <b>Sunrise Hospital</b> to creating <b>NexTalk , a Real-Time Chat
+                            Application</b> , serves as a testament to my capabilities.</p>
+                    <p>I'm always eager to embrace new challenges and contribute to projects that make a real
+                        difference. So, if you're looking for a passionate and dedicated Python full-stack developer to
+                        join your team, let's connect! You can reach me at <a href="#contact">contact</a>.</p>
+                </div>
+                <div class="re-class">
+                    <a class="resume" title="Download Resume" href="Muhammed_Resume.pdf"
+                        download="Muhammed_Resume.pdf">Resume</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="row">
+            <div class="col-lg-2 col-1"></div>
+            <div class="col-11 col-lg-8">
+                <p class="head-name">PROJECTS</p>
+            </div>
+        </div>
+    </div>
+    <div class="project-1">
+        <div class="row">
+            <div class="col-lg-2 col-1"></div>
+            <div class="col-11 col-lg-8">
+                <div class="projects">
+                    <p class="project-name">NEXTALK</p>
+                    <p class="product-details">Chat With Others ? Here Is A Real-Time Chat Application Build With Html ,
+                        Css , Python .</p>
+                    <h6>DEVELOPMENT TOOLS</h6>
+                    <ul>
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>WebSocket</li>
+                        <li>Css</li>
+                        <li>Daphne</li>
+                        <li>Channels</li>
+                    </ul>
+                </div>
+                <div class="buts">
+                    <a href="https://github.com/Luffykun1010/NexTalk" title="source">
+                        <button>
+                            GitHub
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project-2">
+        <div class="row">
+            <div class="col-lg-2 col-1"></div>
+            <div class="col-11 col-lg-8">
+                <div class="projects">
+                    <p class="project-name">SHOPYFIELD</p>
+                    <p class="product-details">Built a user-friendly Shopyfield site with mouthwatering product
+                        photography and seamless checkout .</p>
+                    <h6>DEVELOPMENT TOOLS</h6>
+                    <ul>
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>Css</li>
+                        <li>User Authentication</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+                <div class="buts" style="justify-content: space-evenly;">
+                    <a href="https://suhail10.pythonanywhere.com/" title="Site">
+                        <button>WebSite</button>
+                    </a>
+                    <a href="https://github.com/Luffykun1010/shopyfield" title="Source">
+                        <button>GitHub</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project-34">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-12 col-md-5">
+                    <div class="projects">
+                        <p class="project-name">CENEX</p>
+                        <p class="product-details">A Cargo Site Made With FrontEnd Tools .</p>
+                        <h6>DEVELOPMENT TOOLS</h6>
+                        <ul>
+                            <li>HTML</li>
+                            <li>Css</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div class="buts">
+                        <a href="https://github.com/Luffykun1010/cenex" title="source">
+                            <button>GitHub</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5">
+                    <div class="projects">
+                        <p class="project-name">SUNRISE</p>
+                        <p class="product-details">Using This Site , Book An Appoitment With A Doctor .</p>
+                        <h6>DEVELOPMENT TOOLS</h6>
+                        <ul>
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>HTML</li>
+                            <li>Css</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div class="buts">
+                        <a href="https://github.com/Luffykun1010/sunrise" title="source">
+                            <button>GitHub</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="row">
+            <div class="col-md-2 col-1"></div>
+            <div class="col-11 col-md-8 col-lg-5">
+                <p class="head-name">CONTACT</p>
+                <p class="about-details">Have a question or want to work together?</p>
+                <form onsubmit="sendEmail();reset(); return false;">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" rows="4" placeholder="Ping me? Type here....." required></textarea>
+                    <button class="fo-but" type="submit">HIT THIS **</button>
+                </form>
+                <script>
+                    function sendEmail() {
+                        var from_name = document.getElementById("name").value;
+                        var email_id = document.getElementById("email").value;
+                        var message = document.getElementById("message").value;
+                        emailjs.send("service_tt1uxbr", "template_y7s350j", {
+                            from_name: from_name,
+                            message: message,
+                            email_id: email_id,
+                        }).then(function (response) {
+                            console.log('SUCCESS!', response.status, response.text);
+                        }, function (error) {
+                            console.log('FAILED...', error);
+                        });
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+    <div id="social">
+        <div class="row">
+            <div class="col-md-4 col-1"></div>
+            <div class="col-11 col-md-4">
+                <div class="social">
+                    <div class="row ">
+                        <div class="col-2 d-flex justify-content-center">
+                            <a href="https://www.instagram.com/suh.41.l?igshid=NGVhN2U2NjQ0Yg==" title="Instagram"
+                                onmouseenter="insta()" onmouseleave="instad()">
+                                <svg width="35" id="instaclr" style="display: none;" height="35" viewBox="0 0 256 256"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g fill="none">
+                                        <rect width="256" height="256" fill="url(#skillIconsInstagram0)" rx="60" />
+                                        <rect width="256" height="256" fill="url(#skillIconsInstagram1)" rx="60" />
+                                        <path fill="#fff"
+                                            d="M128.009 28c-27.158 0-30.567.119-41.233.604c-10.646.488-17.913 2.173-24.271 4.646c-6.578 2.554-12.157 5.971-17.715 11.531c-5.563 5.559-8.98 11.138-11.542 17.713c-2.48 6.36-4.167 13.63-4.646 24.271c-.477 10.667-.602 14.077-.602 41.236s.12 30.557.604 41.223c.49 10.646 2.175 17.913 4.646 24.271c2.556 6.578 5.973 12.157 11.533 17.715c5.557 5.563 11.136 8.988 17.709 11.542c6.363 2.473 13.631 4.158 24.275 4.646c10.667.485 14.073.604 41.23.604c27.161 0 30.559-.119 41.225-.604c10.646-.488 17.921-2.173 24.284-4.646c6.575-2.554 12.146-5.979 17.702-11.542c5.563-5.558 8.979-11.137 11.542-17.712c2.458-6.361 4.146-13.63 4.646-24.272c.479-10.666.604-14.066.604-41.225s-.125-30.567-.604-41.234c-.5-10.646-2.188-17.912-4.646-24.27c-2.563-6.578-5.979-12.157-11.542-17.716c-5.562-5.562-11.125-8.979-17.708-11.53c-6.375-2.474-13.646-4.16-24.292-4.647c-10.667-.485-14.063-.604-41.23-.604zm-8.971 18.021c2.663-.004 5.634 0 8.971 0c26.701 0 29.865.096 40.409.575c9.75.446 15.042 2.075 18.567 3.444c4.667 1.812 7.994 3.979 11.492 7.48c3.5 3.5 5.666 6.833 7.483 11.5c1.369 3.52 3 8.812 3.444 18.562c.479 10.542.583 13.708.583 40.396c0 26.688-.104 29.855-.583 40.396c-.446 9.75-2.075 15.042-3.444 18.563c-1.812 4.667-3.983 7.99-7.483 11.488c-3.5 3.5-6.823 5.666-11.492 7.479c-3.521 1.375-8.817 3-18.567 3.446c-10.542.479-13.708.583-40.409.583c-26.702 0-29.867-.104-40.408-.583c-9.75-.45-15.042-2.079-18.57-3.448c-4.666-1.813-8-3.979-11.5-7.479s-5.666-6.825-7.483-11.494c-1.369-3.521-3-8.813-3.444-18.563c-.479-10.542-.575-13.708-.575-40.413c0-26.704.096-29.854.575-40.396c.446-9.75 2.075-15.042 3.444-18.567c1.813-4.667 3.983-8 7.484-11.5c3.5-3.5 6.833-5.667 11.5-7.483c3.525-1.375 8.819-3 18.569-3.448c9.225-.417 12.8-.542 31.437-.563zm62.351 16.604c-6.625 0-12 5.37-12 11.996c0 6.625 5.375 12 12 12s12-5.375 12-12s-5.375-12-12-12zm-53.38 14.021c-28.36 0-51.354 22.994-51.354 51.355c0 28.361 22.994 51.344 51.354 51.344c28.361 0 51.347-22.983 51.347-51.344c0-28.36-22.988-51.355-51.349-51.355zm0 18.021c18.409 0 33.334 14.923 33.334 33.334c0 18.409-14.925 33.334-33.334 33.334c-18.41 0-33.333-14.925-33.333-33.334c0-18.411 14.923-33.334 33.333-33.334" />
+                                        <defs>
+                                            <radialGradient id="skillIconsInstagram0" cx="0" cy="0" r="1"
+                                                gradientTransform="matrix(0 -253.715 235.975 0 68 275.717)"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FD5" />
+                                                <stop offset=".1" stop-color="#FD5" />
+                                                <stop offset=".5" stop-color="#FF543E" />
+                                                <stop offset="1" stop-color="#C837AB" />
+                                            </radialGradient>
+                                            <radialGradient id="skillIconsInstagram1" cx="0" cy="0" r="1"
+                                                gradientTransform="matrix(22.25952 111.2061 -458.39518 91.75449 -42.881 18.441)"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#3771C8" />
+                                                <stop offset=".128" stop-color="#3771C8" />
+                                                <stop offset="1" stop-color="#60F" stop-opacity="0" />
+                                            </radialGradient>
+                                        </defs>
+                                    </g>
+                                </svg>
+                                <svg id="instablack" xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                                    fill="#fff " class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center">
+                            <a href="https://t.me/Gottei_13" onmouseenter="tele()" onmouseleave="teled()"
+                                title="Telegram">
+                                <svg id="telblack" data-target-id="telblack" xmlns="http://www.w3.org/2000/svg"
+                                    width="35" height="35" fill="#fff" class="bi bi-telegram" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+                                </svg>
+                                <svg id="telclr" width="35" height="35" style="display: none;" viewBox="0 0 256 256"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <linearGradient id="logosTelegram0" x1="50%" x2="50%" y1="0%" y2="100%">
+                                            <stop offset="0%" stop-color="#2AABEE" />
+                                            <stop offset="100%" stop-color="#229ED9" />
+                                        </linearGradient>
+                                    </defs>
+                                    <path fill="url(#logosTelegram0)"
+                                        d="M128 0C94.06 0 61.48 13.494 37.5 37.49A128.038 128.038 0 0 0 0 128c0 33.934 13.5 66.514 37.5 90.51C61.48 242.506 94.06 256 128 256s66.52-13.494 90.5-37.49c24-23.996 37.5-56.576 37.5-90.51c0-33.934-13.5-66.514-37.5-90.51C194.52 13.494 161.94 0 128 0" />
+                                    <path fill="#FFF"
+                                        d="M57.94 126.648c37.32-16.256 62.2-26.974 74.64-32.152c35.56-14.786 42.94-17.354 47.76-17.441c1.06-.017 3.42.245 4.96 1.49c1.28 1.05 1.64 2.47 1.82 3.467c.16.996.38 3.266.2 5.038c-1.92 20.24-10.26 69.356-14.5 92.026c-1.78 9.592-5.32 12.808-8.74 13.122c-7.44.684-13.08-4.912-20.28-9.63c-11.26-7.386-17.62-11.982-28.56-19.188c-12.64-8.328-4.44-12.906 2.76-20.386c1.88-1.958 34.64-31.748 35.26-34.45c.08-.338.16-1.598-.6-2.262c-.74-.666-1.84-.438-2.64-.258c-1.14.256-19.12 12.152-54 35.686c-5.1 3.508-9.72 5.218-13.88 5.128c-4.56-.098-13.36-2.584-19.9-4.708c-8-2.606-14.38-3.984-13.82-8.41c.28-2.304 3.46-4.662 9.52-7.072" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center">
+                            <a href="https://www.linkedin.com/in/muhammed-suhail-66b1a4283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                onmouseenter="link()" onmouseleave="linkd()" title="Telegram">
+                                <svg id="lclr" style="display: none;" width="35" height="35" viewBox="0 0 256 256"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g fill="none">
+                                        <rect width="256" height="256" fill="#fff" rx="60" />
+                                        <rect width="256" height="256" fill="#0A66C2" rx="60" />
+                                        <path fill="#fff"
+                                            d="M184.715 217.685h29.27a4 4 0 0 0 4-3.999l.015-61.842c0-32.323-6.965-57.168-44.738-57.168c-14.359-.534-27.9 6.868-35.207 19.228a.32.32 0 0 1-.595-.161V101.66a4 4 0 0 0-4-4h-27.777a4 4 0 0 0-4 4v112.02a4 4 0 0 0 4 4h29.268a4 4 0 0 0 4-4v-55.373c0-15.657 2.97-30.82 22.381-30.82c19.135 0 19.383 17.916 19.383 31.834v54.364a4 4 0 0 0 4 4M38 59.628c0 11.864 9.767 21.626 21.632 21.626c11.862-.001 21.623-9.769 21.623-21.631C81.253 47.761 71.491 38 59.628 38C47.762 38 38 47.763 38 59.627m6.959 158.058h29.307a4 4 0 0 0 4-4V101.66a4 4 0 0 0-4-4H44.959a4 4 0 0 0-4 4v112.025a4 4 0 0 0 4 4" />
+                                    </g>
+                                </svg>
+                                <svg id="lblk" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#fff"
+                                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center">
+                            <a href="https://github.com/Luffykun1010" title="GitHub">
+                                <svg width="35" height="35" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                                    <g fill="#fff">
+                                        <path fill-rule="evenodd"
+                                            d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388c0 26.682 17.303 49.317 41.297 57.303c3.017.56 4.125-1.31 4.125-2.905c0-1.44-.056-6.197-.082-11.243c-16.8 3.653-20.345-7.125-20.345-7.125c-2.747-6.98-6.705-8.836-6.705-8.836c-5.48-3.748.413-3.67.413-3.67c6.063.425 9.257 6.223 9.257 6.223c5.386 9.23 14.127 6.562 17.573 5.02c.542-3.903 2.107-6.568 3.834-8.076c-13.413-1.525-27.514-6.704-27.514-29.843c0-6.593 2.36-11.98 6.223-16.21c-.628-1.52-2.695-7.662.584-15.98c0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033c11.526-7.813 16.59-6.19 16.59-6.19c3.287 8.317 1.22 14.46.593 15.98c3.872 4.23 6.215 9.617 6.215 16.21c0 23.194-14.127 28.3-27.574 29.796c2.167 1.874 4.097 5.55 4.097 11.183c0 8.08-.07 14.583-.07 16.572c0 1.607 1.088 3.49 4.148 2.897c23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"
+                                            clip-rule="evenodd" />
+                                        <path
+                                            d="M26.484 91.806c-.133.3-.605.39-1.035.185c-.44-.196-.685-.605-.543-.906c.13-.31.603-.395 1.04-.188c.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28c-.396-.42-.47-.983-.177-1.254c.298-.266.844-.14 1.24.28c.394.426.472.984.17 1.255zm2.382 3.477c-.37.258-.976.017-1.35-.52c-.37-.538-.37-1.183.01-1.44c.373-.258.97-.025 1.35.507c.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23c-.527-.487-.674-1.18-.343-1.544c.336-.366 1.045-.264 1.564.23c.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486c-.683-.207-1.13-.76-.99-1.238c.14-.477.823-.7 1.512-.485c.683.206 1.13.756.988 1.237m4.943.361c.017.498-.563.91-1.28.92c-.723.017-1.308-.387-1.315-.877c0-.503.568-.91 1.29-.924c.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117c-.7.13-1.35-.172-1.44-.653c-.086-.498.422-.997 1.122-1.126c.714-.123 1.354.17 1.444.663zm0 0" />
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center">
+                            <a href="mailto: muhammedsuhusuhail@gmail.com" onmouseenter="mail()" onmouseleave="maild()"
+                                title="GMail">
+                                <svg width="40" id="mblack" height="40" viewBox="0 0 48 48"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#fff" stroke="#000000" stroke-miterlimit="10"
+                                        d="M13.39 12.15v26.39H7.06A2.56 2.56 0 0 1 4.5 36V16.82m30.11-4.67v26.39h6.33A2.56 2.56 0 0 0 43.5 36V16.82" />
+                                    <path fill="#fff" stroke="#000000" stroke-miterlimit="10"
+                                        d="M24 31.45L43.5 17v-3.6a3.94 3.94 0 0 0-6.28-3.16L24 20.06l-13.22-9.82A3.94 3.94 0 0 0 4.5 13.4V17Z" />
+                                </svg>
+                                <svg id="mclr" style="display: none;" width="35" height="35" viewBox="0 0 256 193"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#4285F4"
+                                        d="M58.182 192.05V93.14L27.507 65.077L0 49.504v125.091c0 9.658 7.825 17.455 17.455 17.455z" />
+                                    <path fill="#34A853"
+                                        d="M197.818 192.05h40.727c9.659 0 17.455-7.826 17.455-17.455V49.505l-31.156 17.837l-27.026 25.798z" />
+                                    <path fill="#EA4335"
+                                        d="m58.182 93.14l-4.174-38.647l4.174-36.989L128 69.868l69.818-52.364l4.669 34.992l-4.669 40.644L128 145.504z" />
+                                    <path fill="#FBBC04"
+                                        d="M197.818 17.504V93.14L256 49.504V26.231c0-21.585-24.64-33.89-41.89-20.945z" />
+                                    <path fill="#C5221F"
+                                        d="m0 49.504l26.759 20.07L58.182 93.14V17.504L41.89 5.286C24.61-7.66 0 4.646 0 26.23z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center">
+                            <a href="https://github.com/Luffykun1010/portfolio" onmouseenter="source()"
+                                onmouseleave="sourced()" title="Source">
+                                <svg id="sclr" width="35" height="35" viewBox="0 0 2048 2048"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#fff"
+                                        d="M1151 641v127H256V641zm0 512v127H256v-127zm256-768h641v1407H639v-256H0V129h1407zM127 256v129h1153V256zm0 1153h1153V512H127zm1792 256V768h-512v129h385v127h-385v129h385v127h-385v129h385v127H768v129zm0-1024V512h-512v129zm-768 256v127H256V897z" />
+                                </svg>
+                                <svg style="display: none;" id="sblack" width="30" height="30" viewBox="0 0 512 512"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#84a59d"
+                                        d="M334.65 484.494c27.29-25.657 49.663-57.373 64.799-94.23c1.043-2.517 105.582-257.15 105.85-257.83c24.405-62.001-20.837-118.76-87.297-116.975H162.851c-52.653-2.677-104.533 11.644-149.395 37.47c-33.224 21.245 1.986 67.57 31.167 40.33C277.276-22.119 481.432 265.707 299.676 448.171l.197.277c-34.711 26.13 8.513 69.963 34.777 36.045" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center" style="width: 100%;">
+                        <div class="col-lg-3"></div>
+                        <div class="col-lg-6 col-12 ">
+                            <div class="idname">
+                                MUHAMMED SUHAIL <span>©2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                const instaclr = document.getElementById('instaclr');
+                const instablack = document.getElementById('instablack');
+                const telclr = document.getElementById('telclr');
+                const telblack = document.getElementById('telblack');
+                const sclr = document.getElementById('sclr');
+                const sblack = document.getElementById('sblack');
+                const mclr = document.getElementById('mclr');
+                const mblack = document.getElementById('mblack');
+                const lclr = document.getElementById('lclr');
+                const lblk = document.getElementById('lblk');
+                function insta() {
+                    instablack.style.display = "none";
+                    instaclr.style.display = "block";
+                }
+                function instad() {
+                    instaclr.style.display = "none";
+                    instablack.style.display = "block";
+                }
+                function tele() {
+                    telblack.style.display = "none";
+                    telclr.style.display = "block";
+                }
+                function teled() {
+                    telclr.style.display = "none";
+                    telblack.style.display = "block";
+                }
+                function source() {
+                    sblack.style.display = "block";
+                    sclr.style.display = "none";
+                }
+                function sourced() {
+                    sclr.style.display = "block";
+                    sblack.style.display = "none";
+                }
+                function mail() {
+                    mblack.style.display = "none";
+                    mclr.style.display = "block";
+                }
+                function maild() {
+                    mclr.style.display = "none";
+                    mblack.style.display = "block";
+                }
+                function link() {
+                    lblk.style.display = "none";
+                    lclr.style.display = "block";
+                }
+                function linkd() {
+                    lclr.style.display = "none";
+                    lblk.style.display = "block";
+                }
+            </script>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

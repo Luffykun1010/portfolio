@@ -1,0 +1,393 @@
+@font-face {
+    font-family: 'Silkscreen';
+    src: url('Silkscreen-Regular.eot');
+    src: url('Silkscreen-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Silkscreen-Regular.woff2') format('woff2'),
+        url('Silkscreen-Regular.woff') format('woff'),
+        url('Silkscreen-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Mina';
+    src: url('Mina-Regular.eot');
+    src: url('Mina-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Mina-Regular.woff2') format('woff2'),
+        url('Mina-Regular.woff') format('woff'),
+        url('Mina-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'IndieFlower';
+    src: url('IndieFlower.eot');
+    src: url('IndieFlower.eot?#iefix') format('embedded-opentype'),
+        url('IndieFlower.woff2') format('woff2'),
+        url('IndieFlower.woff') format('woff'),
+        url('IndieFlower.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Anton';
+    src: url('Anton-Regular.eot');
+    src: url('Anton-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Anton-Regular.woff2') format('woff2'),
+        url('Anton-Regular.woff') format('woff'),
+        url('Anton-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Russ';
+    src: url('RussoOne-Regular.eot');
+    src: url('RussoOne-Regular.eot?#iefix') format('embedded-opentype'),
+        url('RussoOne-Regular.woff2') format('woff2'),
+        url('RussoOne-Regular.woff') format('woff'),
+        url('RussoOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+body {
+    margin: 0;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -1vh;
+    height: 100.9vh;
+    width: 100%;
+    background: url(bg.gif);
+    background-size: cover;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.home-text {
+    backdrop-filter: blur(0.2rem);
+    font-size: 32pt;
+    line-height: 36pt;
+    color: #f9f9f9;
+    font-family: "Silkscreen";
+    text-align: center;
+}
+
+.home-text span {
+    color: #d90429;
+}
+
+.home button {
+    text-decoration: none;
+    color: #f9f9f9;
+    margin-top: 3vh;
+    font-family: "Silkscreen";
+    border: 2px #d90429 solid;
+    padding: 2.5vh 2.5vh;
+    font-size: 13pt;
+    background: none;
+}
+
+.home button:hover {
+    background-color: #d90429;
+    color: #f9f9f9;
+    padding: 2.3vh 2.3vh;
+    margin-top: 4.5vh;
+    font-size: 11pt;
+}
+
+.nav-bar {
+    background: #0b0909;
+}
+
+.row {
+    width: 100%;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.nav-item {
+    margin-left: 4vh;
+    width: 10vw;
+    font-family: "Mina";
+    height: 4vh;
+}
+
+.nav-item a {
+    color: #62929e;
+    font-size: 14pt;
+}
+
+.nav-item a:hover {
+    color: #d90429;
+    font-size: 13pt;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-item {
+        margin-left: 2vh;
+    }
+
+    .git-svg {
+        fill: #287183;
+        opacity: 0.8;
+    }
+
+    .project-name {
+        font-size: 25pt;
+        letter-spacing: 0.5rem;
+    }
+
+    .projects {
+        margin-top: 8vh;
+        margin-bottom: 2vh;
+    }
+    .img1{
+        display: none;
+    }
+    .buts button{
+        margin: 1vh 0 7vh 0;
+    }
+    .idname{
+        margin-left: 2.5vh;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .git-svg {
+        fill: #62929e;
+    }
+
+    .git-svg:hover {
+        fill: #d90429;
+    }
+
+    .project-name {
+        font-size: 40pt;
+        letter-spacing: 1.5rem;
+    }
+
+    .projects {
+        margin-top: 13.5vh;
+        margin-bottom: 4vh;
+    }
+    .img1{
+        width: 100%;
+        height: 75vh;   
+        margin: 13vh 0 13vh 5vh;
+    }
+    .buts button{
+        margin: 1.5vh 0 10vh 0;
+    }
+}
+
+.git-svg {
+    margin-top: 1.8vh;
+}
+
+.head-name {
+    margin-top: 15vh;
+    font-family: "Russ";
+    font-size: 30pt;
+    color: #287183;
+}
+
+.about-details {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+    color: #182326;
+}
+
+.about-details a {
+    text-decoration: none;
+    color: #cd1624;
+}
+
+.about-details a:hover {
+    text-decoration: line-through;
+    color: #02c39a;
+}
+
+.about {
+    margin: 1vh 0 9vh 0;
+}
+
+.resume {
+    font-family: "Russ";
+    font-size: 30pt;
+    color: #287183;
+    text-decoration: none;
+    border: #287183 4px dotted;
+    border-radius: 3vh;
+    padding: 0.5vh 2vh;
+}
+
+.re-class {
+    margin-top: 3.5vh;
+}
+
+.resume:hover {
+    background: #287183;
+    color: #f9f9f9;
+    border: none;
+}
+
+#projects {
+    margin-top: 2vh;
+}
+
+.project-1 {
+    background-color: #1d3557;
+    color: #f9f9f9;
+    font-family: "Anton";
+}
+
+.product-details {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 0.2rem;
+    font-size: 12pt;
+}
+
+.projects h6 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 0.3rem;
+    margin-top: 5vh;
+}
+
+.projects ul {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.2rem;
+    margin-top: 2vh;
+    list-style-type: '+';
+    font-size: 10pt;
+}
+
+.projects li {
+    padding: 0.5vh;
+}
+
+.project-2 {
+    background-color: #fb8500;
+    color: #f9f9f9;
+    font-family: "Anton";
+}
+
+.project-34 {
+    background-color: #606c38;
+    color: #f9f9f9;
+    font-family: "Anton";
+}
+
+#social {
+    margin-top: 10vh;
+    background: #252422;
+}
+
+.social {
+    margin: 10vh 0 8vh 0;
+}
+
+.idname {
+    color: antiquewhite;
+    margin-top: 3vh;
+    opacity: 0.4;
+    font-family: "Mina";
+    font-size: 12pt;
+}
+.idname span{
+    color: #d90429;
+}
+form{
+    border-radius: 1vh;
+    
+}
+form input,textarea{
+    background: #287183;
+    width: 100%;
+    margin: 0.2vh 0;
+    border: none;
+    outline: none;
+    padding: 3vh;
+    color: #f9f9f9;
+    font-size: 13pt;
+    font-family: "SunScreen";
+    border-radius: 1vh;
+}
+form input{
+    height: 8vh;
+}
+form textarea{
+    margin-top: 0.2vh;
+    font-family: "SunScreen";
+}
+form input::placeholder,textarea::placeholder{
+    color: #f9f9f9;
+    font-size: 13pt;
+}
+.fo-but{
+    border: #287183 2.5px solid;
+    background: fixed;
+    border-radius: 1vh;
+    padding:1.8vh 1.5vh;
+    color: #287183;
+    margin-top: 1vh;
+    font-family: "SilkScreen";
+}
+.fo-but:hover{
+    background: #287183;
+    color: #f9f9f9;
+}
+.icon{
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    margin-top: -3vh;
+    border-radius: 1.5vh;
+}
+.buts{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.buts button{
+    width: 8em;
+    height: 3.5rem;
+    background: transparent;
+    border: #eee4e1 2px dashed;
+    border-radius: 2vh;
+    color: #eee4e1;
+}
+.buts button:hover{
+    background: #4c7da2;
+    border:  none;
+    border-radius: 2vh;
+}
+.buts svg:hover{
+    fill: #eee4e1;
+}
+.buts a{
+    text-decoration: none;
+}
